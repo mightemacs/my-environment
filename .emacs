@@ -7,10 +7,13 @@
 (load-theme 'tsdh-dark t)
 
 ;; show line numbers
-(setq-default linum-mode 1)
+(setq-default linum-mode t)
 
 ;; tabs are the bane of my existence
 (setq-default indent-tabs-mode nil)
+
+;; i'm not keen on line wrapping
+(setq-default truncate-lines t)
 
 ;; buffer cycling w/ C-tab and C-shift-tab (defined as chords so they can be held down)
 (when (> emacs-major-version 21)
